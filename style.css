@@ -1,0 +1,13 @@
+body {
+    /* background: linear-gradient(270deg, #894eb9, #ca6298, #bda0d5);
+background-size: 600% 600%;
+
+animation: AnimationName 13s ease infinite; */
+background-color: red;
+}
+
+@keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
