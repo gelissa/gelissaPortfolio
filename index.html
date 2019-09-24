@@ -16,12 +16,12 @@
             background-size: 600% 600%;
             animation: AnimationName 13s ease infinite;
             font-family: 'Big Shoulders Text', cursive;
-            color: white;   
+            color: white;
         }
 
         .wrapper {
             display: grid;
-            grid-template-columns: 40% 60%;
+            /* grid-template-columns: 40% 60%; */
             grid-template-rows: auto auto auto;
             grid-row-gap: 10px;
         }
@@ -43,49 +43,92 @@
         .nameDiv {
             font-size: 66px;
         }
+
+        .nameDiv:hover {
+            color: purple;
+            /* writing-mode: vertical-rl; */
+        }
+
+        .navBar {
+            background-color: white;
+        }
+
         .navList {
             /* float: left; */
             list-style: none;
-            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: purple;
         }
+
+        li {
+            display: inline-block;
+            width: 40px;
+        }
+
+        .navList > li:hover {
+            color: white;
+            writing-mode: vertical-rl;
+        }
+
         .aboutIntro {
             list-style: none;
         }
-        .projectList {
+        .color  {
+            color: purple;
+        }
+
+        .portfolio {
             list-style: none;
+        }
+
+        .portfolio > li {
+            width: 60px;
+        }
+
+        .socialMedia {
+            list-style: none;
+        }
+
+        p {
+            font-size: 35px;
         }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-       <div class="nameDiv">Gelissa</div> 
-       <div class="navBar">
-           <ul class="navList">
-               <li>About</li>
-               <li>Blog</li>
-           </ul>
-       </div>
-       <div class="aboutIntro">
-           <h2>Gelissa is a Javascript developer with a passion for story and language across visual landscapes.</h2>
-           <p>I graduated with a Bachelor of Science in Film Production during which I focused on screenwriting and visual storytelling. </p>
-           <p>During my time as a student at the UCF Full Time Coding Bootcamp, I've created the projects listed below.</p>
-       </div>
-       <div class="projectList">
-           <ul class="portfolio">
-               <li><a href="https://gelissa.github.io/crystalGame/">Battle: Crystal Gems</a></li>
-               <li><a href=" https://gelissa.github.io/giphyAPI/">Giphy GIF Generator</a></li>
-               <li><a href="https://gelissa.github.io/trainScheduler/">Train Scheduler</a></li>
-               <li><a href="https://gelissa.github.io/Basic-Portfolio2/">Former Portfolio</a></li>
-           </ul>
-       </div>
-       <div class="social">
+        <div class="nameDiv">gelissa leveille</div>
+        <ul class="navList">
+            <li>About</li>
+            <li>Blog</li>
+        </ul>
+
+        <!-- <div class="navBar"> -->
+
+        <!-- </div> -->
+        <div class="aboutIntro">
+            <h1>Gelissa is a <span class="color">Javascript</span> developer with a passion for story and language across visual landscapes.</h1>
+            <p>I graduated with a Bachelor of Science in <span class="color">Film Production</span> during which I focused on screenwriting and
+                <span class="color">visual storytelling.</span> </p>
+            <p>During my time as a student at the <span class="color">UCF Full Time Coding Bootcamp</span>, I've created the projects listed below:
+            </p>
+        </div>
+        <div class="projectList">
+            <ul class="portfolio">
+                <li><a href="https://gelissa.github.io/crystalGame/">Battle: Crystal Gems</a></li>
+                <li><a href=" https://gelissa.github.io/giphyAPI/">Giphy GIF Generator</a></li>
+                <li><a href="https://gelissa.github.io/trainScheduler/">Train Scheduler</a></li>
+                <li><a href="https://gelissa.github.io/Basic-Portfolio2/">Former Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="social">
             <ul class="socialMedia">
                 <li>Github</li>
                 <li>LinkedIn</li>
             </ul>
-       </div>
-        
+        </div>
+
     </div>
 </body>
 
