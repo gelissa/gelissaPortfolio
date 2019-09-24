@@ -12,9 +12,10 @@
 
     <style>
         body {
-            background: linear-gradient(270deg, #894eb9, #ca6298, #bda0d5);
-            background-size: 600% 600%;
-            animation: AnimationName 13s ease infinite;
+            background: linear-gradient(228deg, #3d7fdb, #b089d0);
+            background-size: 400% 400%;
+
+            animation: AnimationName 9s ease infinite;
             font-family: 'Big Shoulders Text', cursive;
             color: white;
         }
@@ -28,20 +29,21 @@
 
         @keyframes AnimationName {
             0% {
-                background-position: 94% 0%
+                background-position: 0% 40%
             }
 
             50% {
-                background-position: 7% 100%
+                background-position: 100% 61%
             }
 
             100% {
-                background-position: 94% 0%
+                background-position: 0% 40%
             }
         }
 
         .nameDiv {
             font-size: 66px;
+            grid-column: 1/2;
         }
 
         .nameDiv:hover {
@@ -49,48 +51,74 @@
             /* writing-mode: vertical-rl; */
         }
 
-        .navBar {
+        /* .navBar {
             background-color: white;
-        }
+        } */
 
-        .navList {
-            /* float: left; */
+        /* .navList {
+            float: left;
             list-style: none;
-            margin: 0;
-            padding: 0;
+            margin: 30px 0px;
+            padding: 0px;
             color: purple;
-        }
+            grid-column: 3;
+            font-size: 20px;
+        } */
 
         li {
             display: inline-block;
-            width: 40px;
+            width: 70px;
         }
 
-        .navList > li:hover {
+        /* .navList>li:hover {
             color: white;
             writing-mode: vertical-rl;
-        }
+        } */
 
         .aboutIntro {
             list-style: none;
+            margin: 10px 50px;
+            padding: 10px;
+            grid-column: 1/4;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .color  {
+
+        .color {
             color: purple;
+        }
+
+        .projectList {
+            grid-column: 1/4;
+            margin: 0 auto;
         }
 
         .portfolio {
             list-style: none;
         }
 
-        .portfolio > li {
-            width: 60px;
+        .portfolio>li {
+            width: 190px;
+            font-size: 20px;
         }
 
         .socialMedia {
             list-style: none;
         }
 
-        p {
+        a {
+            text-decoration: none;
+        }
+
+        #one {
+            font-size: 65px;
+            font-weight: bold;
+        }
+
+        #two {
+            font-size: 45px;
+        }
+
+        #three {
             font-size: 35px;
         }
     </style>
@@ -99,35 +127,40 @@
 <body>
     <div class="wrapper">
         <div class="nameDiv">gelissa leveille</div>
-        <ul class="navList">
-            <li>About</li>
-            <li>Blog</li>
-        </ul>
 
+        <div class="social">
+            <ul class="socialMedia">
+                <li><a href="https://github.com/gelissa" target="_blank">Github</a></li>
+                <li><a href="https://linkedin.com/in/gelissaleveille" target="_blank">LinkedIn</a></li>
+                <li>About</li>
+                <li>Blog</li>
+            </ul>
+        </div>
         <!-- <div class="navBar"> -->
 
         <!-- </div> -->
         <div class="aboutIntro">
-            <h1>Gelissa is a <span class="color">Javascript</span> developer with a passion for story and language across visual landscapes.</h1>
-            <p>I graduated with a Bachelor of Science in <span class="color">Film Production</span> during which I focused on screenwriting and
-                <span class="color">visual storytelling.</span> </p>
-            <p>During my time as a student at the <span class="color">UCF Full Time Coding Bootcamp</span>, I've created the projects listed below:
+            <p id="one">I am a <span class="color">Javascript</span> developer with a passion for story and
+                language across visual landscapes.</p>
+            <!-- <p id="two">I graduated with a Bachelor of Science in <span class="color">Film Production</span> during which I focused on screenwriting and
+                <span class="color">visual storytelling.</span> </p> -->
+            <p id="three">During my time as a student at the <span class="color">UCF Full Time Coding Bootcamp</span>,
+                I've created the projects listed below:
             </p>
         </div>
         <div class="projectList">
             <ul class="portfolio">
-                <li><a href="https://gelissa.github.io/crystalGame/">Battle: Crystal Gems</a></li>
-                <li><a href=" https://gelissa.github.io/giphyAPI/">Giphy GIF Generator</a></li>
-                <li><a href="https://gelissa.github.io/trainScheduler/">Train Scheduler</a></li>
-                <li><a href="https://gelissa.github.io/Basic-Portfolio2/">Former Portfolio</a></li>
+                <li><a href="https://gelissa.github.io/crystalGame/" target="_blank">Battle: Crystal Gems</a></li>
+                <li><a href=" https://gelissa.github.io/giphyAPI/" target="_blank">Giphy GIF Generator</a></li>
+                <li><a href="https://gelissa.github.io/trainScheduler/" target="_blank">Train Scheduler</a></li>
+                <li><a href="https://gelissa.github.io/Basic-Portfolio2/" target="_blank">Former Portfolio</a></li>
             </ul>
         </div>
-        <div class="social">
-            <ul class="socialMedia">
-                <li>Github</li>
-                <li>LinkedIn</li>
-            </ul>
-        </div>
+
+        <!-- <ul class="navList">
+            <li>About</li>
+            <li>Blog</li>
+        </ul> -->
 
     </div>
 </body>
